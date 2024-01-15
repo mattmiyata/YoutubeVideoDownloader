@@ -6,12 +6,14 @@
   "scripts": {
     "start-dev": "SET NODE_ENV=development& nodemon app.js",
     "start-prod": "SET NODE_ENV=production& nodemon app.js",
-    "debug": "ndb app.js"
+    "debug": "ndb app.js",
+    "build": "parcel build "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
     "cors": "^2.8.5",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
-    "@babel/preset-env": "^7.23.8"
+    "@babel/preset-env": "^7.23.8",
+    "parcel": "^2.11.0"
   }
 }

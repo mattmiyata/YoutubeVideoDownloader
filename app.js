@@ -7,7 +7,7 @@ const AppError = require('./utils/appError'); // custom Error class
 const globalErrorHandler = require('./controllers/errorController'); // Error controller for dev and prod
 const catchAsync = require('./utils/catchAsync'); // catch handler for async error
 const path = require('path'); // require path for static files
-
+const compression = require('compression');
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); // allows to parse body sent from client
@@ -73,19 +73,9 @@ app.get('/downloadFile', (req, res) => {
   }).pipe(res);
 });
 
-// 404 page
-// app.use((req, res) => {
-//   res.status(404).render('404');
-// });
+app.use(compression());
 
 app.all('*', (req, res, next) => {
-  //  Create error using built in Error contstructor
-  // handle for all verbs 'get', 'post' etc
-  // '*' all urls
-  // const err = new Error(`Can't find ${req.originalUrl} on this server`);
-  // err.status = 'fail';
-  // err.statusCode = 404;
-
   next(new AppError(`Can't find ${req.originalUrl} on this server`, 404));
 
   // if you pass parameter to next() express assumes error and skips other middlewares
