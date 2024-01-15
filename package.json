@@ -7,8 +7,7 @@
     "start": "node server.js",
     "start-dev": "SET NODE_ENV=development& nodemon app.js",
     "start-prod": "SET NODE_ENV=production& nodemon app.js",
-    "debug": "ndb app.js",
-    "build": "parcel build "
+    "debug": "ndb app.js"
   },
   "author": "",
   "license": "ISC",
