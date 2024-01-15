@@ -8,7 +8,7 @@ const globalErrorHandler = require('./controllers/errorController'); // Error co
 const catchAsync = require('./utils/catchAsync'); // catch handler for async error
 const path = require('path'); // require path for static files
 const compression = require('compression');
-const punycode = require('punycode/');
+
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); // allows to parse body sent from client
