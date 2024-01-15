@@ -1,0 +1,107 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  list-style-type: none;
+}
+
+.header {
+  align-content: center;
+}
+
+.heading {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.URL-input,
+.convert-button {
+  font-size: 1.3em;
+  padding: 5px 10px;
+  margin-bottom: 300px;
+}
+
+.download-button {
+  padding: 5px 10px;
+  font-size: 1.3em;
+  border-radius: 4px;
+  border: 2px solid #0485ff;
+  background: #0485ff;
+  color: white;
+}
+
+.URL-input {
+  border-radius: 4px 0px 0px 4px;
+  width: 30em;
+  text-align: left;
+  border: 2px solid #eeeeee;
+  background: #eeeeee;
+  outline: none;
+}
+
+.URL-input:focus {
+  border: 2px solid #0485ff;
+}
+
+.convert-button {
+  border-radius: 0px 4px 4px 0px;
+  border: 2px solid #0485ff;
+  background: #0485ff;
+  color: white;
+}
+
+/* body,
+html {
+  margin: 0;
+  font-family: sans-serif;
+}
+*/
+.container {
+  width: 640px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+/* a { */
+/* flex: 1; */
+/* text-decoration: none;
+  outline-color: transparent;
+  text-align: center;
+  line-height: 3;
+  color: black;
+  padding: 5px 10px; */
+/* margin: 5px 10px; */
+/* } */
+
+/* a:link,
+a:visited,
+a:focus {
+  background: palegoldenrod;
+  color: black;
+  border: 1px solid orange;
+}
+
+a:hover {
+  background: orange;
+}
+
+a:active {
+  background: darkred;
+  color: white;
+} */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+tr {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
