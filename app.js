@@ -14,6 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); // allows to parse body sent from client
 app.use(cors());
 
+app.options('*', cors()); // allow complex requests
+
 app.use(express.static(path.join(__dirname, 'public'))); // set public files
 
 // home page
