@@ -83,4 +83,5 @@ app.all('*', (req, res, next) => {
 
 app.use(globalErrorHandler);
 
-app.listen(4000);
+const port = process.env.PORT || 4000;
+app.listen(port);
