@@ -48,7 +48,7 @@ app.post(
         }),
       });
     } else {
-      res.json({
+      res.render('404', {
         message: 'Something went wrong',
         error: true,
       });
@@ -81,7 +81,7 @@ app.use(compression());
 app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server`, 404));
 
-  // if you pass parameter to next() express assumes error and skips other middlewares
+  //   //   // if you pass parameter to next() express assumes error and skips other middlewares
 });
 
 app.use(globalErrorHandler);

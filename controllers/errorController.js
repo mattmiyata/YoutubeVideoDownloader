@@ -15,15 +15,14 @@ const sendErrorDev = (err, res) => {
 const sendErrorProd = (err, res) => {
   // Operational, trusted error: send message to client
   if (err.isOperational) {
-    res
-      .render('404', {
-        message: 'Something went wrong!',
-      })
-      .status(err.statusCode)
-      .json({
-        status: err.status,
-        message: err.message,
-      });
+    res.render('404', {
+      message: 'Something went wrong!',
+    });
+    // .status(err.statusCode)
+    // .json({
+    //   status: err.status,
+    //   message: err.message,
+    // });
 
     // Programming or other unknown error: don't leak error details
   } else {
@@ -32,15 +31,14 @@ const sendErrorProd = (err, res) => {
 
     // 2) Send generic message
 
-    res
-      .render('404', {
-        message: 'We cannot find that video!',
-      })
-      .status(500)
-      .json({
-        status: 'error',
-        message: 'Something went very wrong!',
-      });
+    res.render('404', {
+      message: 'We cannot find that video!',
+    });
+    // .status(500);
+    // .json({
+    //   status: 'error',
+    //   message: 'Something went very wrong!',
+    // });
   }
 };
 

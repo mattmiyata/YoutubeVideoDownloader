@@ -10,15 +10,25 @@
   </head>
   <body>
     <div class="header">
-      <img
-        src="/images/youfast-high-resolution-logo.png"
-        width="300"
-        height="200"
-      />
+      <a href="/">
+        <img
+          src="/images/youfast-high-resolution-logo.png"
+          width="300"
+          height="200"
+          alt="header"
+        />
+      </a>
     </div>
+
     <h1 class="heading">Enter a YouTube URL to get started!</h1>
     <form method="post" action="/download">
-      <input type="text" class="URL-input" placeholder="Video URL" name="url" />
+      <input
+        required
+        type="text"
+        class="URL-input"
+        placeholder="Video URL"
+        name="url"
+      />
       <button type="submit" class="convert-button">Convert</button>
     </form>
   </body>
