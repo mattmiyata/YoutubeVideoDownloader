@@ -36,7 +36,9 @@ body {
 }
 
 .download-button {
-  width: 100%;
+  display: block;
+  margin: auto;
+
   padding: 5px 10px;
   font-size: 1.3em;
   border-radius: 4px;
