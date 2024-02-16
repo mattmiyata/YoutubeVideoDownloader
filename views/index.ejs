@@ -9,27 +9,43 @@
     <title>YouTube Downloader</title>
   </head>
   <body>
-    <div class="header">
-      <a href="/">
-        <img
-          src="/images/youfast-high-resolution-logo.png"
-          width="300"
-          height="200"
-          alt="header"
+    <div class="container">
+      <div class="header">
+        <a href="/">
+          <img
+            src="/images/youfast-high-resolution-logo.png"
+            width="300"
+            height="200"
+            alt="header"
+          />
+        </a>
+      </div>
+
+      <h1 class="heading">Enter a YouTube URL to get started!</h1>
+      <form method="post" action="/download">
+        <input
+          required
+          type="text"
+          class="URL-input"
+          placeholder="Video URL"
+          name="url"
         />
-      </a>
+        <button type="submit" class="convert-button">Convert</button>
+      </form>
+    </div>
+  </body>
+  <footer>
+    <div>
+      <p>Powered by</p>
+      <img src="/images/nodejs.png" alt="noejs" />
+      <img src="/images/ejslogo.png" alt="ejs" />
     </div>
 
-    <h1 class="heading">Enter a YouTube URL to get started!</h1>
-    <form method="post" action="/download">
-      <input
-        required
-        type="text"
-        class="URL-input"
-        placeholder="Video URL"
-        name="url"
-      />
-      <button type="submit" class="convert-button">Convert</button>
-    </form>
-  </body>
+    <p>Designed by Matthew Miyata</p>
+    <p>
+      <a href="https://mattmiyatadev.netlify.app/">
+        Check out my other work!
+      </a>
+    </p>
+  </footer>
 </html>
