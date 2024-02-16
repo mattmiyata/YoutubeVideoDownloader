@@ -4,10 +4,6 @@
   list-style-type: none;
   box-sizing: border-box;
 }
-body {
-  height: 100vh;
-  width: 100%;
-}
 
 .header {
   align-content: center;
