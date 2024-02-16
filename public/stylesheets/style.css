@@ -4,6 +4,10 @@
   list-style-type: none;
   box-sizing: border-box;
 }
+body {
+  height: 100vh;
+  width: 100%;
+}
 
 .header {
   align-content: center;
@@ -38,6 +42,15 @@
   border: 2px solid #0485ff;
   background: #0485ff;
   color: white;
+}
+
+.URL-input {
+  border-radius: 4px;
+  width: 30em;
+  text-align: left;
+  border: 2px solid #eeeeee;
+  background: #eeeeee;
+  outline: none;
 }
 
 .URL-input:focus {
@@ -86,14 +99,12 @@ footer {
   padding: 15px;
 
   position: static;
-  bottom: 0;
+
   max-height: 270px;
 
   background-color: rgb(230, 230, 230);
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  overflow-x: visible;
+  bottom: 0;
 }
 footer p {
   font-size: 1rem;
