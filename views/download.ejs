@@ -38,11 +38,11 @@
           <th>Click to download!</th>
         </tr>
         <% info.forEach((format) => { %>
-        <% if (!format.hasAudio || !format.hasVideo) return%>
+        <% if (!format.hasAudio ) return%>
           <tr>
           <th>
           <%= format.hasVideo ?
-            `${format.qualityLabel}` : `${format.audioBitrate} kbps `%>
+            `${format.qualityLabel}` : `${format.audioBitrate} kbps (audio only) `%>
           </th>
           <th><%=format.container%></th>
           <th>
@@ -57,10 +57,11 @@
   <footer>
     <div>
       <p>Powered by</p>
+     
       <img src="/images/nodejs.png" alt="noejs" />
       <img src="/images/ejslogo.png" alt="ejs" />
     </div>
-
+    <a href="https://www.npmjs.com/package/ytdl-core">ytdl-core</a>
     <p>Designed by Matthew Miyata</p>
     <p>
       <a href="https://mattmiyatadev.netlify.app/">
