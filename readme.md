@@ -24,7 +24,8 @@ npm start
 ## Code Description
 [app.js](https://github.com/mattmiyata/YoutubeVideoDownloader/blob/main/app.js) - This is the "main" file for the application.  
 [404.ejs](https://github.com/mattmiyata/YoutubeVideoDownloader/blob/main/views/404.ejs) - 404 page with link to homepage
-[index.ejs](https://github.com/mattmiyata/YoutubeVideoDownloader/blob/main/views/index.ejs) - Homepage of application.  User will input desired url in input box.  Submiting form will create a 'post' request to /download and pass necessary info as res.
+[index.ejs](https://github.com/mattmiyata/YoutubeVideoDownloader/blob/main/views/index.ejs) - Homepage of application.  User will input desired url in input box.  
+Submiting form will create a 'post' request to /download and pass necessary info as res.
 [download.ejs](https://github.com/mattmiyata/YoutubeVideoDownloader/blob/main/views/download.ejs) - Page displayed after user submits valid youtube url.  Code will populate page with links for each video format returned from ytld-core.
 
 
