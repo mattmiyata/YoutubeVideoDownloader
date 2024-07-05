@@ -22,8 +22,9 @@ Run the app and view in your browser:
 npm start
 ```
 ## Code Description
+[app.js](https://github.com/mattmiyata/YoutubeVideoDownloader/blob/main/app.js) - This is the "main" file for the application
 
 
-
-  Copy and paste a link to the youtube video you wish to download in the input field and press 'Convert'
-  Click on the button corresponding to your desired video/audio quality
+## Usage
+  1. Copy and paste a link to the youtube video you wish to download in the input field and press 'Convert'
+  2. Click on the button corresponding to your desired video/audio quality
