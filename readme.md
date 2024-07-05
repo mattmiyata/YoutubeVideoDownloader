@@ -2,12 +2,12 @@
 
 Built using Nodejs, Express, ejs, and ytld-core
 
-##Demo
+## Demo
 
 ```
 https://polar-crag-30437-057b7f051c66.herokuapp.com/
 ```
-##Installation
+## Installation
 
 Clone this repository using the following command:
 ```
@@ -21,7 +21,7 @@ Run the app and view in your browser:
 ```
 npm start
 ```
-##Code Description
+## Code Description
 
 
 
